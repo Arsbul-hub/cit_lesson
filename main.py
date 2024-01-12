@@ -1,6 +1,6 @@
-def get_max_number(): # определение функции
+def get_max_number(a, b, c): # a - аргумент функции (переменная в которую передаются данные)
     # Алгоритм нахождения максимума
-    numbers = [0, 1, -1, 5, 4, 2, 10, -100]
+    numbers = a
     max_number = 0
     for n in numbers:
         if n > max_number:
@@ -8,7 +8,4 @@ def get_max_number(): # определение функции
 
     print(max_number)
 
-get_max_number() # вызов (запуск) функции
-get_max_number() # вызов (запуск) функции
-get_max_number() # вызов (запуск) функции
-get_max_number() # вызов (запуск) функции
+get_max_number(1, 2, 3) # вызов (запуск) функции
