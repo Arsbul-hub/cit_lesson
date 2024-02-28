@@ -1,10 +1,21 @@
-a = "кошка, котейка, корабль, корова, котик, комендант"
+def a_b(a, b):
+    a_p = a % 2
+    b_p = b % 2
+    if a_p * b_p > (a + b) / 2:
+        return True
+    else:
+        return False
 
-words_list = a.split(", ")
-words_list = ""
-words_num = 0
-for word in a:
-    if "кот" in word:
-        words_num + 1
 
-print(words_num)
+for i in range(10):
+    a = int(input())
+    b = int(input())
+    out = a_b(a, b)
+    print(out)
+
+"""     
+В консоль вводится 2 числа, нужно проверить, 
+является ли произведения остатков от деления каждого числа на 2 числа больше среднего арифметического этих чисел. 
+(Ввод в консоль нужно проделать 10 раз)
+Проверку нужно запихнуть в функцию, которая возвращает либо True, либо False
+"""
