@@ -1,10 +1,6 @@
-a = "кошка, котейка, корабль, корова, котик, комендант"
+a = -1
+if a == 5:
+    print("Это пять")
+else:
+    print("Это не пять")
 
-words_list = a.split(", ")
-words_list = ""
-words_num = 0
-for word in a:
-    if "кот" in word:
-        words_num + 1
-
-print(words_num)
